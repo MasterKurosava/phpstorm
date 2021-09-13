@@ -10,8 +10,6 @@
   <!-- Объединение -->
   <?php
 
-use function PHPSTORM_META\map;
-
 $sname='Калачев';//фамилия
     $fname='Михаил';//имя
     $tname='Евгеньевич';//отчество
@@ -26,7 +24,7 @@ $sname='Калачев';//фамилия
     $name=array_map(function($el){
       return mb_substr($el ,0,1);
     },$name);
-    echo join('',$name);
+    echo join('.',$name);
   ?>
   <br>
   <!-- Определить пол -->
